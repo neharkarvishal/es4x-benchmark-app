@@ -3,9 +3,7 @@
 
 vertx
   .createHttpServer()
-  .requestHandler(function (req) {
-    req.response().end("Hello!");
-  })
+  .requestHandler(app)
   .listen(42069);
 
 console.log('Server listening at: http://localhost:42069/');
