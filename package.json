@@ -1,0 +1,29 @@
+{
+  "name": "es4x-benchmark-app",
+  "version": "0.1.0",
+  "description": "Benchmarking ES4X app",
+  "main": "index.js",
+  "scripts": {
+    "test": "es4x test index.test.js",
+    "postinstall": "es4x install",
+    "start": "es4x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neharkarvishal/es4x-benchmark-app.git"
+  },
+  "author": "neharkar.vishal@gmail.com",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/neharkarvishal/es4x-benchmark-app/issues"
+  },
+  "homepage": "https://github.com/neharkarvishal/es4x-benchmark-app#readme",
+  "devDependencies": {
+    "@vertx/unit": "latest"
+  },
+  "dependencies": {
+    "es4x-pm": "latest",
+    "@vertx/core": "latest",
+    "@vertx/web": "latest"
+  }
+}

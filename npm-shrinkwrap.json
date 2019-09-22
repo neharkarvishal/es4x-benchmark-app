@@ -1,0 +1,62 @@
+{
+  "name": "es4x-benchmark-app",
+  "version": "0.1.0",
+  "lockfileVersion": 1,
+  "requires": true,
+  "dependencies": {
+    "@vertx/auth-common": {
+      "version": "3.8.1",
+      "resolved": "https://registry.npmjs.org/@vertx/auth-common/-/auth-common-3.8.1.tgz",
+      "integrity": "sha512-Xf3LyPDYEYZ/hStqBuaIELOc9FSFSYCxgMPtASUzsPIyrzB3kAQzh4tSnc/LdJXz+g18gz5t6beuRI7r52+ALA==",
+      "requires": {
+        "@vertx/core": "3.8.1"
+      }
+    },
+    "@vertx/bridge-common": {
+      "version": "3.8.1",
+      "resolved": "https://registry.npmjs.org/@vertx/bridge-common/-/bridge-common-3.8.1.tgz",
+      "integrity": "sha512-aCZye2gGuzaYPMH117pYetaJQry2CDC5XO0+ipCR6lsEKNLkWUbblO/CJdP/Ig2hjtvOUE/4UBrbOEm0/Du8kQ==",
+      "requires": {
+        "@vertx/core": "3.8.1"
+      }
+    },
+    "@vertx/core": {
+      "version": "3.8.1",
+      "resolved": "https://registry.npmjs.org/@vertx/core/-/core-3.8.1.tgz",
+      "integrity": "sha512-L0W/ckmrWO3wpB9xyo3+kQ515D6I/Obh9h/613VHakLL6T63JOhrL+14h6qD+tSP13ldwGskhBv2K15x7XW8IQ=="
+    },
+    "@vertx/unit": {
+      "version": "3.8.1",
+      "resolved": "https://registry.npmjs.org/@vertx/unit/-/unit-3.8.1.tgz",
+      "integrity": "sha512-v75Wv+LVOGv341R75RzGL9TKpR7Nls1zVKQsadR6YIar94tB5hX06tgRpGYHx7n8Fi3I0xwZwMYS5UKxhqK9fQ==",
+      "dev": true,
+      "requires": {
+        "@vertx/core": "3.8.1"
+      }
+    },
+    "@vertx/web": {
+      "version": "3.8.1",
+      "resolved": "https://registry.npmjs.org/@vertx/web/-/web-3.8.1.tgz",
+      "integrity": "sha512-BvgoQwQ2bKXrJmTShhHD5roTSbDFFPFpA8WWhyYm+oQT2g728/XQQFXmOjJq2/7gCk21+zFAf3UAV03g8PMS2Q==",
+      "requires": {
+        "@vertx/auth-common": "3.8.1",
+        "@vertx/bridge-common": "3.8.1",
+        "@vertx/core": "3.8.1",
+        "@vertx/web-common": "3.8.1"
+      }
+    },
+    "@vertx/web-common": {
+      "version": "3.8.1",
+      "resolved": "https://registry.npmjs.org/@vertx/web-common/-/web-common-3.8.1.tgz",
+      "integrity": "sha512-pDqrvBeSr4jfEJAP9E23dWCMEG/qXVIPle6NpZVtjKYWCPnF7VvgrObU9Xd4ZM7EejqYDqpahHKoAOTtAFX7AQ==",
+      "requires": {
+        "@vertx/core": "3.8.1"
+      }
+    },
+    "es4x-pm": {
+      "version": "0.9.1",
+      "resolved": "https://registry.npmjs.org/es4x-pm/-/es4x-pm-0.9.1.tgz",
+      "integrity": "sha512-k5Vds0Yhxa4hsMYtPM3b2TUcAzeFSkMX+wYxYNH6kCnf1F+VoE8y11M+uxjEJYJOtSfj5QSWYolupq3SVNrIKg=="
+    }
+  }
+}
