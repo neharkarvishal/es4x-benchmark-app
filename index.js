@@ -4,9 +4,9 @@
 
 import { Router } from '@vertx/web';
 
-const { SERVER, host, port } = require('./config');
-let { date } = require('./config');
+const { host, port } = require('./config');
 const routes = require('./routes');
+let { date } = require('./config');
 
 // eslint-disable-next-line no-undef
 vertx.setPeriodic(1000, t => (date = new Date().toUTCString()));
@@ -20,14 +20,7 @@ app.route('/').handler(routes.home);
  * This test exercises the framework fundamentals including keep-alive support, request routing, request header
  * parsing, object instantiation, JSON serialization, response header generation, and request count throughput.
  */
-app.get('/json').handler(ctx => {
-  ctx
-    .response()
-    .putHeader('Server', SERVER)
-    .putHeader('Date', date)
-    .putHeader('Content-Type', 'application/json')
-    .end(JSON.stringify({ message: 'Hello, World!' }));
-});
+app.get('/json').handler(routes.json);
 
 /**
  * This test is an exercise of the request-routing fundamentals only, designed to demonstrate the capacity of
@@ -35,14 +28,7 @@ app.get('/json').handler(ctx => {
  * still small, meaning good performance is still necessary in order to saturate the gigabit Ethernet of the test
  * environment.
  */
-app.get('/plaintext').handler(ctx => {
-  ctx
-    .response()
-    .putHeader('Server', SERVER)
-    .putHeader('Date', date)
-    .putHeader('Content-Type', 'text/plain')
-    .end('Hello, World!');
-});
+app.get('/plaintext').handler(routes.plaintext);
 
 // eslint-disable-next-line no-undef
 vertx
