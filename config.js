@@ -1,6 +1,6 @@
 const SERVER = 'Vertx - ES4x';
-let date = new Date().toUTCString();
-const host = '0.0.0.0';
+const date = new Date().toUTCString();
+const host = '127.0.0.1';
 const port = 42069;
 
 exports.SERVER = SERVER;

@@ -19,9 +19,6 @@ ij_smart_tabs = false
 ij_visual_guides = 0,80,120,132
 ij_wrap_on_typing = false
 
-[{*.js,*.json}]
-indent_size = 2
-
 [*.css]
 ij_css_align_closing_brace_with_properties = false
 ij_css_blank_lines_around_nested_selector = 1
@@ -597,3 +594,8 @@ ij_json_space_before_comma = false
 ij_json_spaces_within_braces = false
 ij_json_spaces_within_brackets = false
 ij_json_wrap_long_lines = false
+
+[{*.js,*.json}]
+indent_size = 2
+tab_width = 2
+ij_continuation_indent_size = 2
